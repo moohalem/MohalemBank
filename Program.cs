@@ -78,58 +78,73 @@ internal class Program
                 Environment.Exit(0);
                 break;
             default:
+                Console.Clear();
                 Console.WriteLine("Invalid choice. Please try again.");
+                Thread.Sleep(1000);
                 break;
         }
     }
 
     static void SubCustomertMenu()
     {
-        Console.Clear();
-        Console.WriteLine(".:: CUSTOMER MENU ::.");
-        Console.WriteLine("1. Add Customer");
-        Console.WriteLine("2. Delete Customer");
-        Console.WriteLine("3. Update Customer");
-        Console.WriteLine("4. View Customer");
-        Console.WriteLine("0. Back to main menu");
-        Console.Write("Enter your choice: ");
-        string choice = Console.ReadLine();
-        switch (choice)
+        int subCustomerMenuChoice = -1;
+        do
         {
-            case "1": break;
-            case "2": break;
-            case "3": break;
-            case "4": break;
-            case "0": ShowMenu(); break;
-            default:
-                Console.WriteLine("Invalid choice. Please try again.");
-                break;
-        }
+            Console.Clear();
+            Console.WriteLine(".:: CUSTOMER MENU ::.");
+            Console.WriteLine("1. Add Customer");
+            Console.WriteLine("2. Delete Customer");
+            Console.WriteLine("3. Update Customer");
+            Console.WriteLine("4. View Customer");
+            Console.WriteLine("0. Back to main menu");
+            Console.Write("Enter your choice: ");
+            string choice = Console.ReadLine();
+            switch (choice)
+            {
+                case "1": break;
+                case "2": break;
+                case "3": break;
+                case "4": break;
+                case "0": ShowMenu(); break;
+                default:
+                    Console.Clear();
+                    Console.WriteLine("Invalid choice. Please try again.");
+                    Thread.Sleep(1000);
+                    break;
+            }
+        } while (subCustomerMenuChoice != 0);
     }
 
     static void SubAccountMenu()
     {
-        Console.Clear();
-        Console.WriteLine(".:: ACCOUNTS MENU ::.");
-        Console.WriteLine("1. Add Account");
-        Console.WriteLine("2. Delete Account");
-        Console.WriteLine("3. Update Account");
-        Console.WriteLine("4. View Account");
-        Console.WriteLine("0. Back to main menu");
-        Console.Write("Enter your choice: ");
-        string choice = Console.ReadLine();
-        switch (choice)
+        int subAccountMenuChoice = -1;
+        do
         {
-            case "1": break;
-            case "2": break;
-            case "3": break;
-            case "4": break;
-            case "0": ShowMenu(); break;
-            default:
-                Console.WriteLine("Invalid choice. Please try again.");
-                break;
-        }
+            Console.Clear();
+            Console.WriteLine(".:: ACCOUNTS MENU ::.");
+            Console.WriteLine("1. Add Account");
+            Console.WriteLine("2. Delete Account");
+            Console.WriteLine("3. Update Account");
+            Console.WriteLine("4. View Account");
+            Console.WriteLine("0. Back to main menu");
+            Console.Write("Enter your choice: ");
+            string choice = Console.ReadLine();
+            switch (choice)
+            {
+                case "1": break;
+                case "2": break;
+                case "3": break;
+                case "4": break;
+                case "0": ShowMenu(); break;
+                default:
+                    Console.Clear();
+                    Console.WriteLine("Invalid choice. Please try again.");
+                    Thread.Sleep(1000);
+                    break;
+            }
+        } while (subAccountMenuChoice != 0);
     }
+
     private static void Main(string[] args)
     {
         bool run = true;
