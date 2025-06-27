@@ -45,21 +45,23 @@ internal class Program
 
     static void ShowMenu()
     {
-        Console.WriteLine(":: MENU ::");
-        Console.WriteLine("1. Check Balance");
-        Console.WriteLine("2. Deposit");
-        Console.WriteLine("3. Withdraw");
-        Console.WriteLine("4. User Management");
-        Console.WriteLine("5. Exit");
+        Console.Clear();
+        Console.WriteLine(".:: MENU ::.");
+        Console.WriteLine("1. Customers");
+        Console.WriteLine("2. Accounts");
+        Console.WriteLine("3. Fund Transfer");
+        Console.WriteLine("4. Fund Transfer Statement");
+        Console.WriteLine("5. Account Statement");
+        Console.WriteLine("0. Exit");
         Console.Write("Enter your choice: ");
         string choice = Console.ReadLine();
         switch (choice)
         {
             case "1":
-                Console.WriteLine("Balance: $1000");
+                SubCustomertMenu();
                 break;
             case "2":
-                Console.WriteLine("Deposit functionality not implemented yet.");
+                SubAccountMenu();
                 break;
             case "3":
                 Console.WriteLine("Withdraw functionality not implemented yet.");
@@ -68,7 +70,11 @@ internal class Program
                 Console.WriteLine("User Management functionality not implemented yet.");
                 break;
             case "5":
-                Console.WriteLine("Thank you for using MOOHALEM Bank!");
+                Console.WriteLine("User Management functionality not implemented yet.");
+                break;
+            case "0":
+                Console.Clear();
+                Console.WriteLine("Thank you for using MOHALEM Bank!");
                 Environment.Exit(0);
                 break;
             default:
@@ -77,9 +83,60 @@ internal class Program
         }
     }
 
+    static void SubCustomertMenu()
+    {
+        Console.Clear();
+        Console.WriteLine(".:: CUSTOMER MENU ::.");
+        Console.WriteLine("1. Add Customer");
+        Console.WriteLine("2. Delete Customer");
+        Console.WriteLine("3. Update Customer");
+        Console.WriteLine("4. View Customer");
+        Console.WriteLine("0. Back to main menu");
+        Console.Write("Enter your choice: ");
+        string choice = Console.ReadLine();
+        switch (choice)
+        {
+            case "1": break;
+            case "2": break;
+            case "3": break;
+            case "4": break;
+            case "0": ShowMenu(); break;
+            default:
+                Console.WriteLine("Invalid choice. Please try again.");
+                break;
+        }
+    }
+
+    static void SubAccountMenu()
+    {
+        Console.Clear();
+        Console.WriteLine(".:: ACCOUNTS MENU ::.");
+        Console.WriteLine("1. Add Account");
+        Console.WriteLine("2. Delete Account");
+        Console.WriteLine("3. Update Account");
+        Console.WriteLine("4. View Account");
+        Console.WriteLine("0. Back to main menu");
+        Console.Write("Enter your choice: ");
+        string choice = Console.ReadLine();
+        switch (choice)
+        {
+            case "1": break;
+            case "2": break;
+            case "3": break;
+            case "4": break;
+            case "0": ShowMenu(); break;
+            default:
+                Console.WriteLine("Invalid choice. Please try again.");
+                break;
+        }
+    }
     private static void Main(string[] args)
     {
+        bool run = true;
         ShowIntro();
-        ShowMenu();
+        while (run)
+        {
+            ShowMenu();
+        }
     }
 }
