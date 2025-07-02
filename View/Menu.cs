@@ -1,17 +1,9 @@
-﻿namespace MohalemBank;
+﻿using Services;
+namespace View;
 
-internal class Program
-{
-    private static bool Auth(string username, string password)
-    {
-        if (username == "admin" && password == "nimda")
-            return true;
-        else
-            return false;
-        // ( username == "admin" && password == "nimda"))
-    }
-
-    private static void ShowIntro()
+public static class Menu
+{ 
+    public static void ShowIntro()
     {
         var valid = true;
         string username = "";
@@ -40,10 +32,14 @@ internal class Program
                 valid = false;
         }
 
-        if (!Auth(username, password)) Console.WriteLine("Username/Password not registered");
+        if (!AuthService.Auth(username, password)) Console.WriteLine("Username/Password not registered");
+        else
+        {
+            ShowMenu();
+        }
     }
 
-    static void ShowMenu()
+    private static void ShowMenu()
     {
         Console.Clear();
         Console.WriteLine(".:: MENU ::.");

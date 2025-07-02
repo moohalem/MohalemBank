@@ -1,6 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MohalemBank", "MohalemBank.csproj", "{1C47BFDF-71F5-433E-AC28-21950133AF3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MohalemBank", "MohalemBank\MohalemBank.csproj", "{1C47BFDF-71F5-433E-AC28-21950133AF3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{0AD46035-3BCD-4620-8B0C-C46FE662984F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{C610873A-1F9D-4320-B095-80989EBDFFD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{3B9C5F62-E64E-4DCB-A290-EFC1972240DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +18,17 @@ Global
 		{1C47BFDF-71F5-433E-AC28-21950133AF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C47BFDF-71F5-433E-AC28-21950133AF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C47BFDF-71F5-433E-AC28-21950133AF3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AD46035-3BCD-4620-8B0C-C46FE662984F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD46035-3BCD-4620-8B0C-C46FE662984F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD46035-3BCD-4620-8B0C-C46FE662984F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD46035-3BCD-4620-8B0C-C46FE662984F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C610873A-1F9D-4320-B095-80989EBDFFD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C610873A-1F9D-4320-B095-80989EBDFFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C610873A-1F9D-4320-B095-80989EBDFFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C610873A-1F9D-4320-B095-80989EBDFFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B9C5F62-E64E-4DCB-A290-EFC1972240DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B9C5F62-E64E-4DCB-A290-EFC1972240DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B9C5F62-E64E-4DCB-A290-EFC1972240DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B9C5F62-E64E-4DCB-A290-EFC1972240DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
